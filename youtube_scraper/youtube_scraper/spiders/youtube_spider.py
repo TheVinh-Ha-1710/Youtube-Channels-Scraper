@@ -21,7 +21,7 @@ class YoutubeSpider(scrapy.Spider):
         # "https://us.youtubers.me/viet-nam/entertainment/top-1000-youtube-channels-in-viet-nam",
         # "https://us.youtubers.me/viet-nam/news-politics/top-1000-youtube-channels-in-viet-nam",
         # "https://us.youtubers.me/viet-nam/howto-style/top-1000-youtube-channels-in-viet-nam",
-        # "https://us.youtubers.me/viet-nam/education/top-1000-youtube-channels-in-viet-nam",
+        #"https://us.youtubers.me/viet-nam/education/top-1000-youtube-channels-in-viet-nam",
         "https://us.youtubers.me/viet-nam/science-technology/top-1000-youtube-channels-in-viet-nam"
     ]
     
