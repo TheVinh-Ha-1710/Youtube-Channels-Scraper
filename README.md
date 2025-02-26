@@ -1,4 +1,4 @@
-# Youtube Channel Scraper
+# Youtube Channels Scraper
 
 ## Description
 
