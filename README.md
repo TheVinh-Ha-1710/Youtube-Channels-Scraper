@@ -2,22 +2,22 @@
 
 ## Description
 
-This project focus on building a web scraping bot using Scrapy framework to get information about top Vietnamese youtube channel in various categories for further analysis.
+This project utilizes Scrapy to build a web scraping bot that collects data on top Vietnamese YouTube channels across various categories for analysis.
 
 ## Features
 
-- Data Extraction: Connects to MongoDB using pymongo to extract data on famous musical albums.
-- Data Transformation: Utilizes the mrjob framework to perform MapReduce, partitioning data into meaningful datasets, such as Annual top sales, Best sellers in history, etc.
-- Data Storage: Loads the transformed data into text-based databases for further analysis.
-- Pipeline Report: Generates a report detailing the pipeline designs, key features, and potential improvements.
+- Scrapes Top Vietnamese YouTube Channels: Collects data on leading YouTube channels across multiple categories.
+- Automated Data Extraction: Uses Scrapy to efficiently extract channel names, subscriber counts, total views, and more.
+- Customizable Categories: Allows modification of scraping targets based on user-defined categories.
+- CSV Export: Saves the extracted data into a structured CSV file for further analysis.
+- Error Handling & Logging: Implements basic error handling and logging to ensure smooth execution.
+- Lightweight & Fast: Optimized for quick and efficient data retrieval.
 
 ## Technologies Used
 
-- Python: Core language for data extraction, transformation, and processing.
-- MongoDB: NoSQL database for storing and retrieving album data.
-- pymongo: Python library for connecting to MongoDB and extracting data.
-- mrjob: Framework for running MapReduce jobs in Python.
-- json: Python library for json parsing and processing.
+- Python: main programming language.
+- Scrapy: Python library for web scraping.
+- csv: File format of the results.
 
 ## Installation & Setup
 
@@ -32,8 +32,8 @@ This project focus on building a web scraping bot using Scrapy framework to get 
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/TheVinh-Ha-1710/Big-Data-Pipeline-Design.git
-   cd Big-Data-Pipeline-Design
+   git clone https://github.com/TheVinh-Ha-1710/Youtube-Channels-Scraper.git
+   cd Youtube-Channels-Scraper
    ```
 
 2. Create and activate a virtual environment (optional but recommended):
@@ -49,16 +49,17 @@ This project focus on building a web scraping bot using Scrapy framework to get 
    pip install -r requirements.txt
    ```
 
-4. Run the data pipeline scripts:
+4. Run the web scraping bot:
 
    ```sh
-   chmode +x run_pipelines.sh
+   cd youtube_scraper
+   scrapy crawl youtube_spider -o ../results.csv
    ```
 
 ## Folder Structure
 
 ```
-📂 Diabetes-Predictive-Model
+📂 Youtube-Channels-Scraper
  ├── 📂 youtube_scraper         # Main infrastructure of the scraper
  ├── 📜 .gitignore              # For specifying untracked files
  ├── 📜 README.md               # Project document
